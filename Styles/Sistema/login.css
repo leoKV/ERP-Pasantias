@@ -1,0 +1,66 @@
+﻿/*footer left*/  
+.footer_left{padding: 18px 12px;}
+/*footer right*/
+.footer_right{margin: 6px 0px;padding: 5px 12px;}
+/*color de letras*/
+.footer_left p{color:#ffffff;}
+/*imagen login*/
+.img_login{background-image: url('../Imagenes/login.jpg') !important;background-size: 110% 140% !important;background-position: -30px -30px !important;}
+/*contenido login*/
+.content_login{
+    background: #e6e8eb;
+    width: 92%;
+    height: auto;
+    /* min-height: 480px; */
+    min-height: 491px;
+    max-height: 80%;
+    margin: 0.5% auto !important;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    padding: 1px;
+}
+/*datos de login*/
+.data_login
+{
+    padding: 15px;
+    margin: 7% 15px;
+    /*background: #cecece;
+    background: -moz-linear-gradient(top, #cecece 0%, #f6f6f6 50%, #cecece 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #cecece), color-stop(50%, #f6f6f6), color-stop(100%, #cecece));
+    background: -webkit-linear-gradient(top, #cecece 0%, #f6f6f6 50%, #cecece 100%);
+    background: -o-linear-gradient(top, #cecece 0%, #f6f6f6 50%, #cecece 100%);
+    background: -ms-linear-gradient(top, #cecece 0%, #f6f6f6 50%, #cecece 100%);
+    background: linear-gradient(to bottom, #cecece 0%, #f6f6f6 50%, #cecece 100%);*/
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;    
+    background-color: rgba(255,255,255,0.2);
+}
+/*estilo label de datos de login*/
+.data_login label
+{
+    color: #145a7a;
+    font-family: 'proxima_novalight', Arial, Helvetica, sans-serif;
+    /*font-size: 12px;*/
+    /*font-weight:normal;*/
+}
+/*contenido header*/        
+.header_content{background: #e6e8eb;}
+/*header login*/
+.header_login{
+    width: auto;
+    min-width: 80%;
+    max-height: 95%;
+    /* height: 60px; */
+    height: 65px;
+    margin: 0px auto;
+    padding: 20px 35px;
+    clear: both;
+}
+/*shadown login*/
+.shadow_login {
+    -webkit-box-shadow: 12px 0px 33px #606060;
+    -moz-box-shadow: 12px 0px 33px #606060;
+    box-shadow: 12px 0px 33px #606060;
+}

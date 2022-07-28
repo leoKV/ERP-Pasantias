@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="SiteMaster" %>
+<%@ Register Src="~/Vista/Diseno/Header.ascx" TagName="encabezado" TagPrefix="enc" %>
+<%@ Register Src="~/Vista/Diseno/Footer.ascx" TagName="footer" TagPrefix="foot" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - NAD Smart Invoice</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <%--<!---****************** Evitar caché ******************--%>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <!---****************** INICIO CSS **********************--->
+    <script src="../../Scripts/Sistema/jquery-1.10.2.js"></script>
+    <script src="../../Scripts/Sistema/bootstrapValidator.js"></script>
+    <script src="../../Scripts/Sistema/jsblockUI.js"></script>
+    <script src="../../Scripts/Sistema/jsNotificaciones.js"></script>
+    <%--<script src="../../Styles/Sistema/Bootsrap/js/bootstrap.js"></script>--%>
+    <script src="../../Styles/Sistema/Bootsrap/js/bootstrap.min.js"></script>
+    <script src="../../Scripts/Sistema/jquery.dataTables.min.js"></script>
+    <script src="../../Scripts/Sistema/notify-master/bootstrap-notify.min.js"></script>
+    <script src="../../Scripts/Sistema/js_general.js?v=4"></script>
+    <script src="../../Scripts/Sistema/bootstrap-select.js"></script>
+    <script src="../../Scripts/Sistema/bootstrap-datepicker.js"></script>
+    <!---****************** FIN CSS **********************--->
+    <!---****************** INICIO JQUERY **********************--->
+    <link href="../../Styles/Sistema/bootstrap-select.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/jquery.dataTables_themeroller.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/datepicker.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/estiloGeneral.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/fileinput.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/styles.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/Sistema/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/bootstrap-checkbox.css" rel="stylesheet" />
+    <%--<link href="../../Styles/Sistema/Bootsrap/css/bootstrap.css" rel="stylesheet" />--%>
+    <link href="../../Styles/Sistema/Bootsrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/Bootsrap/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/cssTreeView.css" rel="stylesheet" />
+    <link href="../../Styles/Sistema/headSistema.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.6/xls.core.min.js"></script>
+    <script src="../../Scripts/Sistema/ex2excel/src/jquery.table2excel.js"></script>
+    <!---****************** FIN JQUERY **********************--->
+
+    <!---****************** INICIO HEADER **********************--->
+    <asp:ContentPlaceHolder id="head" runat="server" ClientIDMode="Static">
+        
+    </asp:ContentPlaceHolder>
+    <!---****************** FIN HEADER **********************--->
+</head>
+<body>
+    <form runat="server">
+        <!---- plantilla header ---->
+        <enc:encabezado ID="header" runat="server" /> 
+        <!---- Termina Header ---->
+        <div class="container-fluid">
+            <div class="row content_gen shadow">
+                <asp:ContentPlaceHolder id="contend" runat="server" ClientIDMode="Static" >
+                <!---******************Contenido**********************--->
+
+                <!---******************Fin Contenido**********************--->
+                </asp:ContentPlaceHolder>                
+            </div>
+        </div>
+        <!----plantilla footer ---->
+        <foot:footer ID="footer" runat="server" /> 
+        <!---- plantilla footer ----->
+        <asp:ContentPlaceHolder ID="dialog" runat="server" ClientIDMode="Static">
+        <!---******************Dialog**********************--->
+
+        <!---******************Fin Dialog**********************--->
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

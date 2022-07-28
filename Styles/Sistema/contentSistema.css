@@ -1,0 +1,39 @@
+﻿/* escritorio */
+@media (min-width: 1200px) {
+    .content_gen { min-height: 480px;}
+}
+/* escritorio pequeño  o tablet */
+@media (max-width:  979px) {
+    .content_gen { min-height: 480px;}
+}
+/* tablet o smartphone */
+@media (max-width: 767px) {
+    .content_gen { min-height: 480px;}
+}
+/* smartphone */
+@media (max-width: 480px) {
+    .content_gen { min-height: 480px;}
+}
+
+/*Estilo del contenido General*/
+.content_gen {
+    background: #e6e8eb;
+    width: 100%;
+    height: auto;
+    /*min-height: 400px;*/
+    
+    max-height: 100%;
+    margin: 0.5% auto !important;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+}
+/*Estilo para breakCrumbs*/
+.breadcrumb {
+    background-image: linear-gradient(left, #F5F5F5,#E6E8EB);
+    background-image: -webkit-linear-gradient(left,#F5F5F5, #E6E8EB);
+    background-image: -moz-linear-gradient(left, #F5F5F5, #E6E8EB);
+    background-image: -o-linear-gradient(left,#F5F5F5, #E6E8EB);
+    background-image: -ms-linear-gradient(left, #F5F5F5, #E6E8EB);
+}

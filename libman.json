@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "xlsx@0.18.5",
+      "destination": "lib/xlsx/"
+    }
+  ]
+}
